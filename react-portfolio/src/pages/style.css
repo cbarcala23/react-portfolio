@@ -1,0 +1,265 @@
+html, body {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {
+    margin: 0%;
+  }
+  /*NAV SECTION*/
+  
+  .nav {
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    height: 50px;
+    margin: auto;
+    color: #777777;
+    list-style: none;
+    padding: 0px 20px 20px 0px;
+    font-size: 18px;
+  }
+  
+  .nav > li {
+    display: inline-block;
+    padding: 10px 0px 0px 25px;
+  }
+  
+  .nav > li a {
+    text-decoration: none;
+    color: #777777;
+  }
+  
+  .nav > li a:hover {
+    color: #4b4b4b;
+  }
+  
+  .logo {
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    height: 80px;
+    width: 100%;
+    font-size: 30px;
+    background: #4aaaa5;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  #headercontent {
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: #cccccc;
+    border-width: 0 0 1px 0;
+    height: 80px;
+  }
+  
+  #floatimage {
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+  
+  .h1 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: black;
+    font-size: 30px;
+  }
+  /*CONTENT AREA*/
+  
+  .card-deck {
+    margin-bottom: 50px;
+  }
+  
+  
+  .wrapper {
+    height: 100%;
+    background: #ffffff;
+    margin: auto;
+    border-style: solid;
+    border-width: .5px;
+    border-color: #cccccc;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    overflow: auto;
+  }
+  
+  .p {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #777777;
+    line-height: 26px;
+    margin-top: 20px;
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  
+  .footer {
+    position: fixed;
+    background: #343a40;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 40px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  /*FORMS*/
+  input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    color: #777777;
+  }
+  
+  input[type=submit] {
+    background-color: #343a40;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    cursor: pointer;
+    float: left;
+  }
+  
+  #messagebox {
+    height: 200px;
+  }
+  
+  /*PORTFOLIO IMAGES*/
+  .gallerybox {
+    width: 600px;
+    margin-top: 30px;
+  }
+  
+  .galleryimg {
+    position: relative;
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .gallerybanner {
+    position: absolute;
+    z-index: 999;
+    margin: auto;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    text-align: center;
+    top: 70%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 100%;
+  }
+  /*-----------------------------------------------------------*/
+  /*-----------------MEDIA QUERIES INDEX PAGE------------------*/
+  /*-----------------------------------------------------------*/
+  
+  @media screen and (max-width: 640px) {
+    #headercontent {
+        height: 160px;
+    }
+    .logo {
+        text-align: center;
+        padding-top: 20px;
+    }
+    .nav {
+        justify-content: center;
+        font-size: 15px;
+        padding-top: 20px;
+    }
+    #floatimage {
+        float: none;
+    }
+    .wrapper {
+        margin: 20px;
+        height: auto;
+    }
+    .gallerybox {
+        margin-left: 30px;
+    }
+    .gallerybanner {
+        height: 80px;
+        padding-top: 28px;
+        font-size: 18px;
+    }
+    .card-body {
+        height: auto;
+    }
+  }
+  
+  @media screen and (min-width: 641px) and (max-width: 768px) {
+    .logo {
+        padding-top: 20px;
+        height: 80px;
+        font-size: 25px;
+    }
+    .nav {
+        justify-content: right;
+        background-color: #ffffff;
+        border-style: solid;
+        border-color: #cccccc;
+        border-width: 0 0 1px 0;
+        height: 80px;
+        font-size: 15px;
+        padding: 20px 0px 0px 0px;
+    }
+    #floatimage {
+        margin-top: 10px;
+    }
+    .wrapper {
+        width: auto;
+        height: auto;
+    }
+    .gallerybox {
+        margin-left: 50px;
+    }
+    .gallerybanner {
+        height: 80px;
+        padding-top: 28px;
+        font-size: 18px;
+    }
+    .galleryimg {
+        width: auto;
+        height: 100%;
+    }
+    .card-body {
+        height: auto;
+    }
+  
+  }
+  
+  @media screen and (min-width: 769px) and (max-width: 980px) {
+    .logo {
+        padding-top: 20px;
+        font-size: 25px;
+    }
+    .nav {
+        justify-content: flex-end;
+        padding-top: 20px;
+        font-size: 15px;
+    }
+    .wrapper {
+        height: auto;
+        width: auto;
+        margin: 20px 0px 20px 0px;
+    }
+    #floatimage {
+        margin-top: 10px;
+    }
+  
+    .gallerybanner {
+        height: 80px;
+        padding-top: 28px;
+        font-size: 18px;
+    }
+    .galleryimg {
+        width: auto;
+        height: 100%;
+    }
+    .card-body {
+        height: 500px;
+    }
+  }
+  
+  
+  
